@@ -1,7 +1,7 @@
-* Industrial Wastewater Quality Prediction API
+# Industrial Wastewater Quality Prediction API
 This project provides a RESTful API to predict the quality of industrial wastewater using machine learning models. The API is built using the Flask framework, following the Clean Architecture approach. The dataset consists of various water quality parameters, including pH, conductivity, turbidity, TSS, BOD, COD, Total Coliform, and Color.
 
-** Dataset
+## Dataset
 The dataset consists of the following features:
 
 - pH: Acidity/alkalinity level.
