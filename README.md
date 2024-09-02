@@ -28,7 +28,6 @@ Ensure you have the following installed:
 - MySQL database
 - Pandas
 - Scikit-learn
-- Joblib
 - Flask
 
 ### Train the Model
