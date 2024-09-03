@@ -46,7 +46,7 @@ Before running the application, you'll need to train the Random Forest model on 
    train_model.py
    ```
 
-This will generate a trained Random Forest model stored in the models directory.
+This will generate a trained Random Forest model stored in the Data directory.
 
 ### Running the Application
 
