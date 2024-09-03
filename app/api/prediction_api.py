@@ -1,6 +1,7 @@
 from flask import Blueprint, request, jsonify
 from app.repositories.water_quality_repo import WaterQualityRepository
 from app.use_cases.predict_water_quality_use_case import PredictWaterQualityUseCase
+import numpy as np
 
 prediction_api = Blueprint('prediction_api', __name__)
 
@@ -11,7 +12,6 @@ repository = WaterQualityRepository(
 )
 use_case = PredictWaterQualityUseCase(repository)
 
-import numpy as np
 
 def convert_to_serializable(obj):
     if isinstance(obj, (bool, np.bool_)):  # Tambahkan np.bool_
