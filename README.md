@@ -69,7 +69,7 @@ The Flask application will start and be available at http://localhost:5000.
 
 The water-quality-ml-api exposes several endpoints to interact with the trained model and water quality data.
 
-**Predict Survival Rate**:
+**Predict BOD**:
 
 - Endpoint: api/predict
 - Method: POST
