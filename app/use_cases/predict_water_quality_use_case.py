@@ -8,7 +8,7 @@ class PredictWaterQualityUseCase:
         predicted_bod = prediction_result["predicted_BOD"]
         
         # Simple rule-based anomaly detection
-        anomaly_detected = predicted_bod > 200  # Example threshold
+        anomaly_detected = predicted_bod > 150  # Example threshold
 
         return {
             "predicted_BOD": predicted_bod,
