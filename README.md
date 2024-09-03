@@ -30,6 +30,7 @@ Ensure you have the following installed:
 - Scikit-learn
 - Flask
 - Numpy
+- Pickle
 
 ### Train the Model
 
