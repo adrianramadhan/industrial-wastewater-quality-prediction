@@ -29,6 +29,7 @@ Ensure you have the following installed:
 - Pandas
 - Scikit-learn
 - Flask
+- Numpy
 
 ### Train the Model
 
@@ -75,43 +76,42 @@ The water-quality-ml-api exposes several endpoints to interact with the trained 
 - Request Body
 
 ```
-    {
-       "pH": 7.2,
-       "Conductivity": 1200,
-       "Turbidity": 3.5,
-       "TSS": 15,
-       "COD": 220,
-       "TotalColiform": 50,
-       "Color": 100
-    }
+{
+    "pH": 7.2,
+    "Conductivity (µS/cm)": 1200,
+    "Turbidity (NTU)": 3.5,
+    "TSS (mg/L)": 15,
+    "COD (mg/L)": 220,
+    "Total Coliform (MPN/100mL)": 50
+}
 ```
 
 - Response
 
 ```
 {
-    "predicted_BOD": 180,
-    "anomaly_detected": false
+    "anomaly_detected": false,
+    "predicted_BOD": 102.6950136668083
 }
 ```
 
 **Get Water Quality Data:**:
 
-- Endpoint: api/dataset
+- Endpoint: api/data
 - Method: GET
 - Response
 
 ```
 [
     {
-        "pH": 7.2,
-        "Conductivity": 1200,
-        "Turbidity": 3.5,
-        "TSS": 15,
-        "BOD": 180,
-        "COD": 220,
-        "TotalColiform": 50,
-        "Color": 100
+        "BOD (mg/L)": 96.87674072417535,
+        "COD (mg/L)": 463.8309450955251,
+        "Conductivity (µS/cm)": 3286.608315717363,
+        "Date": "Sun, 01 Jan 2023 00:00:00 GMT",
+        "TSS (mg/L)": 78.43473346450703,
+        "Total Coliform (MPN/100mL)": 3597.517592938975,
+        "Turbidity (NTU)": 134.5706704982383,
+        "pH": 7.82483727290871
     },
 ]
 ```
